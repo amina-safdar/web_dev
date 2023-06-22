@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url(hk-grotesk.woff), url(hk-grotesk.woff2);
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'HK Grotesk', Arial;
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+header {
+  left: 36px;
+  position: fixed;
+  top: 36px;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+header.white {
+  color: white;
+}
+
+div.progress-bar {
+  background-color: #333333;
+  height: 10px;
+  left: 0;
+  position: fixed;
+  top: 1px;
+  transition: background-color 0.3s;
+  width: 0;
+  z-index: 100;
+}
+
+div.progress-bar.white {
+  background-color: #ffffff;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px;
+}
+
+.content {
+  position: relative;
+}
+
+.content img {
+  position: relative;
+}
+
+.one .square {
+  background-color: #d54156;
+  height: 100px;
+  left: -50px;
+  position: absolute;
+  top: 90px;
+  width: 100px;
+}
+
+.one .circle {
+  background-color: #5982a0;
+  border-radius: 100%;
+  bottom: 100px;
+  height: 100px;
+  position: absolute;
+  right: -50px;
+  width: 100px;
+}
+
+.two .square {
+  background-color: #d6ac35;
+  height: 100px;
+  left: -50px;
+  position: absolute;
+  top: 120px;
+  width: 100px;
+}
+
+.two .circle {
+  background-color: #be3c52;
+  border-radius: 100%;
+  bottom: 50px;
+  height: 100px;
+  position: absolute;
+  right: -50px;
+  width: 100px;
+}
+
+.three .square {
+  background-color: #5f3736;
+  height: 100px;
+  left: -50px;
+  position: absolute;
+  top: 50px;
+  width: 100px;
+}
+
+.three .circle {
+  background-color: #6e5f67;
+  border-radius: 100%;
+  bottom: 50px;
+  height: 100px;
+  position: absolute;
+  right: -50px;
+  width: 100px;
+}
+
+.four .square {
+  background-color: #d54156;
+  height: 100px;
+  left: -50px;
+  position: absolute;
+  top: 30px;
+  width: 100px;
+}
+
+.four .circle {
+  background-color: #5982a0;
+  border-radius: 100%;
+  bottom: 60px;
+  height: 100px;
+  position: absolute;
+  right: -50px;
+  width: 100px;
+}
+
+.one {
+  background-color: #c8dee0;
+}
+
+.two {
+  background-color: #c5c5c5;
+}
+
+.three {
+  background-color: #292121;
+}
+
+.four {
+  background-color: #f3f1f2;
+}
