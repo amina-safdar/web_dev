@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Tomorrow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+body {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: 'Faune', Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 0 280px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section.options {
+  background-color: #2a2a2a;
+  border-right: solid 2px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  left: 0;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  width: 280px;
+}
+
+div.option {
+  margin-top: 20px;
+}
+
+div.option-checkbox {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance:none ;
+  background-color: #575757;
+  border-radius: 50%;
+  height: 16px;
+  outline: none;
+  position: relative;
+  transition: background-color 0.5s;
+  width: 16px;
+}
+
+input[type='checkbox']:checked {
+  background-color: #63ff03;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type='text'] {
+  background-color: #575757;
+  border: none;
+  color: #ffffff;
+  padding: 5px 7px;
+  width: 100%;
+}
+
+textarea.output {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 64px;
+  min-height: 100vh;
+  outline: none;
+  padding: 40px;
+  width: 100%;
+}
+
+input[type='range'] {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+div.colours{
+  display: flex;
+}
+
+div.colours span{
+  border-radius: 50%;
+  border:  2px solid rgba(255,255,255,0.2);
+  margin-right: 10px;
+  margin-top: 5px;
+  text-align: center;
+  transition: border 0.25s;
+  width: 30px; height: 30px;
+}
+
+div.colours span.selected{
+  border: 2px solid white;
+}
+
+:root{
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+
