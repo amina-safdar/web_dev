@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,500,900i&display=swap');
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  color: #052837;
+  font-family: 'Rubrik', Arial;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+header {
+  align-items: center;
+  background-color: #c7f2f1;
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 48px;
+  position: fixed;
+  top: 0;
+  transition: background-color 1s, height 1s;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+header.scrolled {
+  background-color: #ffffff;
+  height: 100px;
+}
+
+header h1,
+header nav {
+  flex: 1;
+}
+
+header nav {
+  text-align: right;
+}
+
+header a {
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+div.face{
+  position: relative;
+}
+
+div .iris {
+  left: 11px;
+  position: absolute;
+  top: 23px;
+}
+
+div .iris-right {
+  left: 49px;
+}
+
+div.iris div {
+  background-color: #052837;
+  border-radius: 50%;
+  height: 6px;
+  left: 0;
+  position: relative;
+  top: 0;
+  /* Center the iris */
+  transform: translate(-50%,-50%);
+  width: 6px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+section.hero {
+  background-color: #c7f2f1;
+  background-image: url(hero.jpg);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 64px;
+  padding: 160px 48px;
+}
+
+section.hero h2,
+section.hero p {
+  max-width: 440px;
+}
+
+section.content {
+  display: flex;
+  flex-direction: row;
+  margin: 48px;
+}
+
+section.content div.content {
+  flex: 0 0 400px;
+  margin: 0 0 0 48px;
+}
+
+section.content:nth-child(odd) {
+  /* To alternate image and text order in consecutive sections */
+  flex-direction: row-reverse;
+}
+
+section.content:nth-child(odd) div.content {
+  margin-right: 48px;
+  text-align: right;
+}
+
+a {
+  color: #052837;
+  text-decoration: none;
+}
+
+a.button {
+  background-color: #052837;
+  border-radius: 50px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+p {
+  margin: 1.5em 0;
+}
