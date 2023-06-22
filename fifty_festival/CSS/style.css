@@ -1,0 +1,174 @@
+body {
+  font-family: 'LunchType-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section {
+  /* For marquee */
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.section-pad {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.intro {
+  background-image: url(intro.jpg);
+}
+
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro p {
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 112px;
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  /* Ensure end state stays the same */
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn;
+  opacity: 0;
+}
+
+.marquee {
+  color: #fff;
+  font-family: 'LunchType-Medium', sans-serif;
+  /* Each letter takes up 5% of the viewport width*/
+  font-size: 5vw;  
+  left: 0;
+  line-height: 1;
+  mix-blend-mode: difference;
+  /* Prevents marquee text from causing scroll bars */
+  overflow: hidden;
+  /* Takes marquee text onto new layer */
+  position: absolute;  
+  top: 3vw;
+  width: 100vw;
+}
+
+.marquee span {
+  animation: moveLeft 220s infinite;
+  display: block;
+  /* Allows us to add animation */
+  position: relative;
+  /* Ensures text stays on one line */
+  white-space: nowrap;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  100% {
+    transform: translateX(-3000vw);
+  }
+}
+
+.day-1 {
+  background-color: #fd76a7;
+}
+
+.day-2 {
+  background-color: #1bb190;
+}
+
+.day-3 {
+  background-image: url(day-3.jpg);
+}
+
+.date {
+  color: #ffeecf;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+
+.day {
+  /* To remove overflow from squiggle shapes */
+  overflow: hidden;  
+  position: relative;
+  text-align: center;
+}
+
+.day .container{
+  z-index: 2;
+  /* z-index value ensures that shapes don't obstruct lineup in 
+  smaller windows */
+}
+
+.lineup h2 {
+  font-size: 52px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineup p {
+  font-size: 21px;
+}
+
+.lineup li {
+  margin-bottom: 26px;
+}
+
+.scroll-to{
+  background-image: url(down-arrow.svg); background-repeat: none; 
+  background-size: contain; background-position: center;
+  bottom: 3vh;
+  height: 32px;
+  left: 50%; 
+  position: absolute;
+  transform: translateX(-50%);
+  width: 64px; 
+}
+
+.scroll-to-intro{
+  background-image: url(down-arrow-light.svg);
+}
+
+
+ 
+

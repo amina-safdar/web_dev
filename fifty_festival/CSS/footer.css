@@ -1,0 +1,105 @@
+.flex-column {
+  flex-direction: column;
+}
+
+.register {
+  background-color: #FFEED1;
+  display: flex;
+  min-height: 65vh;
+}
+
+.footer {
+  background-color: #111118;
+  display: flex;
+  min-height: 35vh;
+  text-align: center;
+}
+
+.footer img {
+  margin-bottom: 24px;
+  max-width: 87px;
+}
+
+.button {
+  border: solid 2px #FFEED1;
+  color: #FFEED1;
+  line-height: 1;
+  min-width: 120px;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register .container {
+  display: flex;
+}
+
+.register h2 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 48px;
+}
+
+.sign-up {
+  border-bottom: solid 2px #00B290;
+  display: flex;
+  padding-bottom: 12px;
+}
+
+input {
+  background: none;
+  border: none;
+  font-size: 21px;
+  outline: none;
+}
+
+.email-input {
+	/* Input fills the space */
+  flex: 1;
+}
+
+.form {
+  margin: 48px 24px;
+}
+
+.eyes {
+  background-image: url(eyes_open.svg);
+  height: 32px;
+  width: 108px;
+}
+
+.hand {
+	/* Aligns hand to the bottom of its container */
+  align-self: flex-end;
+  background-image: url(ok_hand.svg);
+  height: 89px;
+  width: 57px;
+}
+
+.eyes,
+.hand {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 780px) {
+  
+  .register .container {
+    flex-direction: column;
+  }
+  
+  .register h2 {
+    font-size: 30px;
+  }
+  
+  .form {
+    margin: 24px 0;
+  }
+  
+}
+
+
+
+
+
