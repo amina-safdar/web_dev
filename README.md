@@ -3,7 +3,7 @@
 All images were downloaded from [Unsplash](https://unsplash.com/).
 
 #### [Brux](https://brux-107.superhi.hosting/)
-Responsive landing page for fictional dental clinic "Brux". The site uses fixed header changes, scroll effects, and features a logo that follows the user's mouse movements around the page.
+Landing page for fictional dental clinic "Brux". The site uses fixed header changes, scroll effects, and features a logo that follows the user's mouse movements around the page.
 - Technologies used: JavaScript, HTML5/CSS3
  
 #### [Design + Code](https://design-code3.netlify.app/)
